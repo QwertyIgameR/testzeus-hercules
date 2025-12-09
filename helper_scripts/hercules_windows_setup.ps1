@@ -7,8 +7,8 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 # Step 0: Temporarily bypass execution policy for this session
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 
-# Step 1: Install Python 3.11 from Microsoft Store
-Write-Host "Installing Python 3.11 from Microsoft Store..." -ForegroundColor Green
+# Step 1: Install Python 3.12 from Microsoft Store
+Write-Host "Installing Python 3.12 from Microsoft Store..." -ForegroundColor Green
 Start-Process -NoNewWindow -Wait "ms-windows-store://pdp/?productid=9NRWMJP3717K"
 
 # Step 2: Verify Python Installation

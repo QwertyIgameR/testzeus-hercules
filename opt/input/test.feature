@@ -1,6 +1,7 @@
-Feature: Open Google homepage 
-
-  Scenario: User opens Google homepage
-    Given I have a web browser open
-    When I navigate to "https://www.google.com"
-    Then I should see the Google homepage
+Feature: Google Search BSC
+  Scenario: Search for TestZeus
+    Given I am on the Google homepage
+    When I enter "BSC" in the search box
+    And I click on the "Google Search" button
+    Then I should see search results
+    And Open the BSC Company URL

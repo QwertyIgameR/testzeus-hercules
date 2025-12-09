@@ -120,7 +120,7 @@ If you are new to the Python ecosystem and don't know where to begin, dont worry
 
 For a quick taste of the solution, you can try the notebook here: 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YiZsXem1POTwkcr17QqflXnihhuSqwM2?usp=sharing)
-- **Note**: Colab might ask you to restart the session as python3.11 and some libs are installed during the installation of testzeus-hercules. Please restart the session if required and continue the execution. Also , we recommend one of the approaches below for getting the full flavor of the solution. 
+- **Note**: Colab might ask you to restart the session as python3.12 and some libs are installed during the installation of testzeus-hercules. Please restart the session if required and continue the execution. Also , we recommend one of the approaches below for getting the full flavor of the solution. 
 
 ### Approach 1: Using PyPI Package
 
@@ -363,7 +363,7 @@ For the hardcore enthusiasts, you can use Hercules via the source code to get a 
 
 #### Prerequisites
 
-- Ensure you have **Python 3.11** installed on your system.
+- Ensure you have **Python 3.12** installed on your system.
 
 #### Steps to Run from Source
 
@@ -435,11 +435,11 @@ For the hardcore enthusiasts, you can use Hercules via the source code to get a 
 
 ### Approach 4: Setting Up via helper_script_custom.sh
 
-For those who want a fully automated setup experience on Linux/macOS environments, we provide a helper_script.sh. This script installs Python 3.11 (if needed), creates a virtual environment, installs TestZeus Hercules, and sets up the base project directories in an opt folder.
+For those who want a fully automated setup experience on Linux/macOS environments, we provide a helper_script.sh. This script installs Python 3.12 (if needed), creates a virtual environment, installs TestZeus Hercules, and sets up the base project directories in an opt folder.
 
 #### Prerequisites
 
-- Ensure you have **Python 3.11** installed on your system.
+- Ensure you have **Python 3.12** installed on your system.
 
 #### Steps to Run from helper_script_custom.sh
 1. **Download or Create the Script**
@@ -448,10 +448,10 @@ For those who want a fully automated setup experience on Linux/macOS environment
   #!/bin/bash
   # set -ex
 
-  # curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
+  # curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 
   # Create a new Python virtual environment named 'test'
-  python3.11 -m venv test
+  python3.12 -m venv test
 
   # Activate the virtual environment
   source test/bin/activate
@@ -498,7 +498,7 @@ chmod +x helper_script.sh
 ./helper_script.sh
 ```
 -	The script will:
-	•	Create a Python 3.11 virtual environment named test.
+	•	Create a Python 3.12 virtual environment named test.
 	•	Install testzeus-hercules and Playwright dependencies.
 	•	Create the opt folder structure (for input/output/test data).
 	•	Download sample config files: agents_llm_config.json, .env, and example feature/test data files.
@@ -1053,7 +1053,7 @@ Think of it like a sandboxed environment where TestZeus Hercules and its depende
 
 #### ✅ **1. Prerequisites**
 
-First, ensure Python 3.11 or higher is installed. You can verify this by running:
+First, ensure Python 3.12 or higher is installed. You can verify this by running:
 
 ```bash
 python --version

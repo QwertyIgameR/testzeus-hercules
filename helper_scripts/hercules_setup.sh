@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-# curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
+# curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 
 # Create a new Python virtual environment named 'test'
 python3 -m venv test
